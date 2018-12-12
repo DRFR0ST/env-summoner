@@ -1,0 +1,48 @@
+{
+  "name": "env-summoner",
+  "version": "1.0.0",
+  "description": "Summon a ready-to-code web app environment.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/DRFR0ST/env-summoner.git"
+  },
+  "keywords": [
+    "zero-configuration",
+    "build-tools",
+    "create-react-app"
+  ],
+  "husky": {
+    "hooks": {
+      "pre-commit": "lint-staged"
+    }
+  },
+  "lint-staged": {
+    "*.{js,json,css,md}": [
+      "eslint --fix",
+      "prettier --write",
+      "git add"
+    ]
+  },
+  "bin": {
+    "env-summoner": "./index.js"
+  },
+  "author": "Mike Eling <mike.eling97@gmail.com>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/DRFR0ST/env-summoner/issues"
+  },
+  "homepage": "https://github.com/DRFR0ST/env-summoner#readme",
+  "dependencies": {
+    "chalk": "^2.4.1",
+    "commander": "^2.19.0",
+    "eslint": "^5.10.0",
+    "fs-extra": "^7.0.1",
+    "husky": "^1.2.0",
+    "lint-staged": "^8.1.0",
+    "validate-npm-package-name": "^3.0.0"
+  }
+}
