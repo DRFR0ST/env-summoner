@@ -13,4 +13,4 @@
 
 ---
 
-#### This tool is still in development and isn't ready to use!
+#### This tool is still in development and might contain bugs and critical errors.
