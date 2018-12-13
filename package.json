@@ -28,7 +28,7 @@
     ]
   },
   "bin": {
-    "env-summoner": "./index.js"
+    "env-summoner": "./src/index.js"
   },
   "author": "Mike Eling <mike.eling97@gmail.com>",
   "license": "MIT",
