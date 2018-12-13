@@ -22,7 +22,7 @@
   "lint-staged": {
     "*.{js}": [
       "eslint --fix",
-      "prettier --write",
+      "prettier --write src/*.js",
       "git add"
     ]
   },
