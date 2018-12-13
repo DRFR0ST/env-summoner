@@ -4,7 +4,8 @@
   "description": "Summon a ready-to-code web app environment.",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "pre-commit": "lint-staged"
   },
   "repository": {
     "type": "git",
@@ -15,13 +16,11 @@
     "build-tools",
     "create-react-app"
   ],
-  "husky": {
-    "hooks": {
-      "pre-commit": "lint-staged"
-    }
-  },
+  "pre-commit": [
+    "pre-commit"
+  ],
   "lint-staged": {
-    "*.{js,json,css,md}": [
+    "*.{js}": [
       "eslint --fix",
       "prettier --write",
       "git add"
@@ -41,8 +40,11 @@
     "commander": "^2.19.0",
     "eslint": "^5.10.0",
     "fs-extra": "^7.0.1",
-    "husky": "^1.2.0",
-    "lint-staged": "^8.1.0",
     "validate-npm-package-name": "^3.0.0"
+  },
+  "devDependencies": {
+    "lint-staged": "^8.1.0",
+    "pre-commit": "^1.2.2",
+    "prettier": "^1.15.3"
   }
 }

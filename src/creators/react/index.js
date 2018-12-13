@@ -1,5 +1,7 @@
 const exec = require("child_process").exec,
   fs = require("fs-extra"),
+#!/usr/bin/env node
+
   utils = require("../../utils.js");
 
 module.exports = function(path, callback) {
